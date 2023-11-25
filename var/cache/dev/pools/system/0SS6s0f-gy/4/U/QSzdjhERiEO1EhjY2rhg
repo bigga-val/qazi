@@ -1,0 +1,3 @@
+<?php //App%255CController%255CUIController%2523charts
+
+return [PHP_INT_MAX, []];

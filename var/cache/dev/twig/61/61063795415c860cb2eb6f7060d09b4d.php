@@ -75,6 +75,8 @@ class __TwigTemplate_caf70989d9d205470d8e94c2ac594f59 extends Template
         echo "\">Creer</a>
     </div>
     <div class=\"table-responsive\">
+        <input type=\"text\" class=\"form-input mb-3\" id=\"myInput\" placeholder=\"Rechercher...\" title=\"Tapez ici\">
+
         <table class=\"table\">
             <thead>
             <tr>
@@ -87,46 +89,46 @@ class __TwigTemplate_caf70989d9d205470d8e94c2ac594f59 extends Template
                 <th>actions</th>
             </tr>
             </thead>
-            <tbody>
+            <tbody id=\"myTable\">
             ";
-        // line 24
+        // line 26
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["factures"]) || array_key_exists("factures", $context) ? $context["factures"] : (function () { throw new RuntimeError('Variable "factures" does not exist.', 24, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["factures"]) || array_key_exists("factures", $context) ? $context["factures"] : (function () { throw new RuntimeError('Variable "factures" does not exist.', 26, $this->source); })()));
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["facture"]) {
-            // line 25
+            // line 27
             echo "                <tr>
                     <td>#</td>
                     <td>";
-            // line 27
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["facture"], "numeroFacture", [], "any", false, false, false, 27), "html", null, true);
+            // line 29
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["facture"], "numeroFacture", [], "any", false, false, false, 29), "html", null, true);
             echo "</td>
                     <td>";
-            // line 28
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["facture"], "type", [], "any", false, false, false, 28), "designation", [], "any", false, false, false, 28), "html", null, true);
+            // line 30
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["facture"], "type", [], "any", false, false, false, 30), "designation", [], "any", false, false, false, 30), "html", null, true);
             echo "</td>
                     <td>
                         <a href=\"";
-            // line 30
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("getClientFacture", ["id" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["facture"], "client", [], "any", false, false, false, 30), "id", [], "any", false, false, false, 30)]), "html", null, true);
+            // line 32
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("getClientFacture", ["id" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["facture"], "client", [], "any", false, false, false, 32), "id", [], "any", false, false, false, 32)]), "html", null, true);
             echo "\">
                             ";
-            // line 31
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["facture"], "client", [], "any", false, false, false, 31), "nom", [], "any", false, false, false, 31), "html", null, true);
+            // line 33
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["facture"], "client", [], "any", false, false, false, 33), "nom", [], "any", false, false, false, 33), "html", null, true);
             echo "
                         </a></td>
                     <td>";
-            // line 33
-            ((twig_get_attribute($this->env, $this->source, $context["facture"], "dateDebut", [], "any", false, false, false, 33)) ? (print (twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["facture"], "dateDebut", [], "any", false, false, false, 33), "d-m-Y"), "html", null, true))) : (print ("")));
+            // line 35
+            ((twig_get_attribute($this->env, $this->source, $context["facture"], "dateDebut", [], "any", false, false, false, 35)) ? (print (twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["facture"], "dateDebut", [], "any", false, false, false, 35), "d-m-Y"), "html", null, true))) : (print ("")));
             echo "</td>
                     <td>";
-            // line 34
-            ((twig_get_attribute($this->env, $this->source, $context["facture"], "dateFin", [], "any", false, false, false, 34)) ? (print (twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["facture"], "dateFin", [], "any", false, false, false, 34), "d-m-Y"), "html", null, true))) : (print ("")));
+            // line 36
+            ((twig_get_attribute($this->env, $this->source, $context["facture"], "dateFin", [], "any", false, false, false, 36)) ? (print (twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["facture"], "dateFin", [], "any", false, false, false, 36), "d-m-Y"), "html", null, true))) : (print ("")));
             echo "</td>
                     <td class=\"flex\">
                         <a href=\"";
-            // line 36
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_facture_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["facture"], "id", [], "any", false, false, false, 36)]), "html", null, true);
+            // line 38
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_facture_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["facture"], "id", [], "any", false, false, false, 38)]), "html", null, true);
             echo "\" class=\"hover:text-info\">
                             <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-4.5 h-4.5\">
                                 <path
@@ -151,8 +153,8 @@ class __TwigTemplate_caf70989d9d205470d8e94c2ac594f59 extends Template
                         </a>
 
                         <a href=\"";
-            // line 59
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_facture_show", ["id" => twig_get_attribute($this->env, $this->source, $context["facture"], "id", [], "any", false, false, false, 59)]), "html", null, true);
+            // line 61
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_facture_show", ["id" => twig_get_attribute($this->env, $this->source, $context["facture"], "id", [], "any", false, false, false, 61)]), "html", null, true);
             echo "\" class=\"hover:text-primary\">
                             <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-5 h-5\">
                                 <path
@@ -166,10 +168,6 @@ class __TwigTemplate_caf70989d9d205470d8e94c2ac594f59 extends Template
                         </a>
 
                         ";
-            // line 72
-            echo "                        ";
-            // line 73
-            echo "                        ";
             // line 74
             echo "                        ";
             // line 75
@@ -205,13 +203,17 @@ class __TwigTemplate_caf70989d9d205470d8e94c2ac594f59 extends Template
             // line 90
             echo "                        ";
             // line 91
+            echo "                        ";
+            // line 92
+            echo "                        ";
+            // line 93
             echo "                    </td>
                 </tr>
             ";
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 94
+            // line 96
             echo "                <tr>
                     <td colspan=\"7\">no records found</td>
                 </tr>
@@ -220,7 +222,7 @@ class __TwigTemplate_caf70989d9d205470d8e94c2ac594f59 extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['facture'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 98
+        // line 100
         echo "            </tbody>
         </table>
     </div>
@@ -248,7 +250,7 @@ class __TwigTemplate_caf70989d9d205470d8e94c2ac594f59 extends Template
 
     public function getDebugInfo()
     {
-        return array (  224 => 98,  215 => 94,  208 => 91,  206 => 90,  204 => 89,  202 => 88,  200 => 87,  198 => 86,  196 => 85,  194 => 84,  192 => 83,  190 => 82,  188 => 81,  186 => 80,  184 => 79,  182 => 78,  180 => 77,  178 => 76,  176 => 75,  174 => 74,  172 => 73,  170 => 72,  155 => 59,  129 => 36,  124 => 34,  120 => 33,  115 => 31,  111 => 30,  106 => 28,  102 => 27,  98 => 25,  93 => 24,  74 => 8,  68 => 4,  58 => 3,  35 => 1,);
+        return array (  226 => 100,  217 => 96,  210 => 93,  208 => 92,  206 => 91,  204 => 90,  202 => 89,  200 => 88,  198 => 87,  196 => 86,  194 => 85,  192 => 84,  190 => 83,  188 => 82,  186 => 81,  184 => 80,  182 => 79,  180 => 78,  178 => 77,  176 => 76,  174 => 75,  172 => 74,  157 => 61,  131 => 38,  126 => 36,  122 => 35,  117 => 33,  113 => 32,  108 => 30,  104 => 29,  100 => 27,  95 => 26,  74 => 8,  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -263,6 +265,8 @@ class __TwigTemplate_caf70989d9d205470d8e94c2ac594f59 extends Template
         <a class=\"btn btn-primary\" href=\"{{ path('app_facture_new') }}\">Creer</a>
     </div>
     <div class=\"table-responsive\">
+        <input type=\"text\" class=\"form-input mb-3\" id=\"myInput\" placeholder=\"Rechercher...\" title=\"Tapez ici\">
+
         <table class=\"table\">
             <thead>
             <tr>
@@ -275,7 +279,7 @@ class __TwigTemplate_caf70989d9d205470d8e94c2ac594f59 extends Template
                 <th>actions</th>
             </tr>
             </thead>
-            <tbody>
+            <tbody id=\"myTable\">
             {% for facture in factures %}
                 <tr>
                     <td>#</td>

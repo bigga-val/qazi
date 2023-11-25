@@ -47,11 +47,11 @@ class __TwigTemplate_180b4e55fa8e1de78e7d7d61bff29a63 extends Template
                 <a href=\"/\" class=\"main-logo flex items-center shrink-0\">
                     <img class=\"w-8 ltr:-ml-1 rtl:-mr-1 inline\" src=\"";
         // line 6
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/logo.svg"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/qazi.svg"), "html", null, true);
         echo " \"
                         alt=\"image\" />
                     <span
-                        class=\"text-2xl ltr:ml-1.5 rtl:mr-1.5  font-semibold  align-middle hidden md:inline dark:text-white-light transition-all duration-300\">VRISTO</span>
+                        class=\"text-2xl ltr:ml-1.5 rtl:mr-1.5  font-semibold  align-middle hidden md:inline dark:text-white-light transition-all duration-300\">QAZI</span>
                 </a>
 
                 <a href=\"javascript:;\"
@@ -1364,10 +1364,10 @@ class __TwigTemplate_180b4e55fa8e1de78e7d7d61bff29a63 extends Template
         <div class=\"relative bg-white flex w-full items-center px-5 py-2.5 dark:bg-[#0e1726]\">
             <div class=\"horizontal-logo flex lg:hidden justify-between items-center ltr:mr-2 rtl:ml-2\">
                 <a href=\"/\" class=\"main-logo flex items-center shrink-0\">
-                    <img class=\"w-8 ltr:-ml-1 rtl:-mr-1 inline\" src=\"{{ asset('assets/images/logo.svg') }} \"
+                    <img class=\"w-8 ltr:-ml-1 rtl:-mr-1 inline\" src=\"{{ asset('assets/images/qazi.svg') }} \"
                         alt=\"image\" />
                     <span
-                        class=\"text-2xl ltr:ml-1.5 rtl:mr-1.5  font-semibold  align-middle hidden md:inline dark:text-white-light transition-all duration-300\">VRISTO</span>
+                        class=\"text-2xl ltr:ml-1.5 rtl:mr-1.5  font-semibold  align-middle hidden md:inline dark:text-white-light transition-all duration-300\">QAZI</span>
                 </a>
 
                 <a href=\"javascript:;\"

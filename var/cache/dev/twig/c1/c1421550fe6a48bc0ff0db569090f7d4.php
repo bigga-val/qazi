@@ -47,7 +47,7 @@ class __TwigTemplate_cc28ca1a51a9b14160a3cec3b9e17339 extends Template
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>VRISTO - Multipurpose Tailwind Dashboard Template</title>
+    <title>Qazi - Gestion des factures</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel=\"icon\" type=\"image/x-icon\" href=\"";
         // line 9
@@ -242,7 +242,7 @@ class __TwigTemplate_cc28ca1a51a9b14160a3cec3b9e17339 extends Template
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>VRISTO - Multipurpose Tailwind Dashboard Template</title>
+    <title>Qazi - Gestion des factures</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel=\"icon\" type=\"image/x-icon\" href=\"{{ asset('/favicon.svg') }}\" />
     <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">

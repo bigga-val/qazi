@@ -90,11 +90,10 @@ class __TwigTemplate_2478aa8e435a52cddff3b45d19af8d80 extends Template
                 class=\"bg-gradient-to-t from-[#ff1361bf] to-[#44107A] w-1/2  min-h-screen hidden lg:flex flex-col items-center justify-center text-white dark:text-black p-4\">
             <div class=\"w-full mx-auto mb-5\"><img src=\"";
         // line 9
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/auth-cover.svg"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/qazi.svg"), "html", null, true);
         echo "\"
                                                   alt=\"coming_soon\" class=\"lg:max-w-[370px] xl:max-w-[500px] mx-auto\" /></div>
-            <h3 class=\"text-3xl font-bold mb-4 text-center\">Join the community of expert developers</h3>
-            <p>It is easy to setup with great customer experience. Start your 7-day free trial</p>
+            <h3 class=\"text-3xl font-bold mb-4 text-center\">Gerez vos factures avec la plus grande facilite</h3>
         </div>
         <div class=\"w-full lg:w-1/2 relative flex justify-center items-center\">
             <div class=\"max-w-[480px] p-5 md:p-10\">
@@ -102,51 +101,51 @@ class __TwigTemplate_2478aa8e435a52cddff3b45d19af8d80 extends Template
                 <p class=\"mb-7\">Enter your email and password to login</p>
                 <form class=\"space-y-5\" method=\"post\">
                     ";
-        // line 19
-        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 19, $this->source); })())) {
-            // line 20
+        // line 18
+        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 18, $this->source); })())) {
+            // line 19
             echo "                        <div class=\"alert alert-danger\">";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 20, $this->source); })()), "messageKey", [], "any", false, false, false, 20), twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 20, $this->source); })()), "messageData", [], "any", false, false, false, 20), "security"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 19, $this->source); })()), "messageKey", [], "any", false, false, false, 19), twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 19, $this->source); })()), "messageData", [], "any", false, false, false, 19), "security"), "html", null, true);
             echo "</div>
                     ";
         }
-        // line 22
+        // line 21
         echo "                    ";
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 22, $this->source); })()), "user", [], "any", false, false, false, 22)) {
-            // line 23
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 21, $this->source); })()), "user", [], "any", false, false, false, 21)) {
+            // line 22
             echo "                        <div class=\"mb-3\">
                             You are logged in as ";
-            // line 24
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 24, $this->source); })()), "user", [], "any", false, false, false, 24), "userIdentifier", [], "any", false, false, false, 24), "html", null, true);
+            // line 23
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 23, $this->source); })()), "user", [], "any", false, false, false, 23), "userIdentifier", [], "any", false, false, false, 23), "html", null, true);
             echo ", <a href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
             echo "\">Logout</a>
                         </div>
                     ";
         }
-        // line 27
+        // line 26
         echo "
                     <div>
                         <label for=\"email\">Email</label>
 ";
-        // line 31
+        // line 30
         echo "                        <input type=\"email\" value=\"";
-        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 31, $this->source); })()), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 30, $this->source); })()), "html", null, true);
         echo "\" name=\"email\" id=\"inputEmail\" class=\"form-input\" autocomplete=\"email\" required autofocus>
                     </div>
                     <div>
                         <label for=\"password\">Password</label>
 ";
-        // line 36
+        // line 35
         echo "                        <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-input\" autocomplete=\"current-password\" required>
                         <input type=\"hidden\" name=\"_csrf_token\" value=\"";
-        // line 37
+        // line 36
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken("authenticate"), "html", null, true);
         echo "\"#}>
                     </div>
                     <div>
 ";
-        // line 44
+        // line 43
         echo "                    </div>
                     <button type=\"submit\" class=\"btn btn-primary w-full\">SIGN IN</button>
                 </form>
@@ -174,7 +173,7 @@ class __TwigTemplate_2478aa8e435a52cddff3b45d19af8d80 extends Template
 
     public function getDebugInfo()
     {
-        return array (  150 => 44,  144 => 37,  141 => 36,  133 => 31,  128 => 27,  120 => 24,  117 => 23,  114 => 22,  108 => 20,  106 => 19,  93 => 9,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  149 => 43,  143 => 36,  140 => 35,  132 => 30,  127 => 26,  119 => 23,  116 => 22,  113 => 21,  107 => 19,  105 => 18,  93 => 9,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -187,10 +186,9 @@ class __TwigTemplate_2478aa8e435a52cddff3b45d19af8d80 extends Template
     <div class=\"flex min-h-screen\">
         <div
                 class=\"bg-gradient-to-t from-[#ff1361bf] to-[#44107A] w-1/2  min-h-screen hidden lg:flex flex-col items-center justify-center text-white dark:text-black p-4\">
-            <div class=\"w-full mx-auto mb-5\"><img src=\"{{ asset('assets/images/auth-cover.svg') }}\"
+            <div class=\"w-full mx-auto mb-5\"><img src=\"{{ asset('assets/images/qazi.svg') }}\"
                                                   alt=\"coming_soon\" class=\"lg:max-w-[370px] xl:max-w-[500px] mx-auto\" /></div>
-            <h3 class=\"text-3xl font-bold mb-4 text-center\">Join the community of expert developers</h3>
-            <p>It is easy to setup with great customer experience. Start your 7-day free trial</p>
+            <h3 class=\"text-3xl font-bold mb-4 text-center\">Gerez vos factures avec la plus grande facilite</h3>
         </div>
         <div class=\"w-full lg:w-1/2 relative flex justify-center items-center\">
             <div class=\"max-w-[480px] p-5 md:p-10\">

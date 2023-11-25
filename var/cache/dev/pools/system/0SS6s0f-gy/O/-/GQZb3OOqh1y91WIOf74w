@@ -1,0 +1,3 @@
+<?php //App%255CController%255CAuthController%2523auth_cover_lockscreen
+
+return [PHP_INT_MAX, []];
